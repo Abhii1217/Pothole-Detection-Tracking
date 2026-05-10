@@ -1,0 +1,26 @@
+# Pothole Detection & Tracking - Configuration
+
+paths:
+  model: "models/best.pt"
+  video: "data/input_video.mov"
+  gpx: "data/recording.gpx"
+  csv_log: "outputs/pothole_log.csv"
+  annotated_video: "outputs/annotated_video.mp4"
+  geojson: "outputs/potholes.geojson"
+
+detection:
+  confidence_threshold: 0.25
+  iou_threshold: 0.45
+  image_size: 640
+
+tracking:
+  track_thresh: 0.4
+  match_thresh: 0.8
+  track_buffer: 30
+
+classes:
+  0: "Longitudinal Cracks"
+  1: "Transverse Cracks"
+  2: "Alligator Cracks"
+  3: "Potholes"
+  poi_class_ids: [3]

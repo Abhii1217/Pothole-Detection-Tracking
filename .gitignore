@@ -1,0 +1,27 @@
+# Model weights
+models/
+*.pt
+*.pth
+
+# Input data
+data/
+
+# Output files
+outputs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
